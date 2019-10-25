@@ -8,10 +8,11 @@
 # at your option. This file may not be copied, modified, or distributed except according to those terms.
 
 import unittest
-import stint
-import "../ff.nim"
+
+import ../ff
 
 suite "Final field test":
-  test "test inverse function":
-    block:
-      check: 3.bn128.inv == "14592161914559516814830937163504850059032242933610689562465469457717205663745".bn128
+    test "test inverse function":
+        block:
+            check: 3.obn128.inv == "14592161914559516814830937163504850059032242933610689562465469457717205663745".obn128
+
